@@ -1,0 +1,19 @@
+const getRandomElement = array => array[getRandomIndex(array)];
+orange
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const squareRoot = num => Math.sqrt(num);
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+// This is a comment
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const findSmallestNumber = numbers => Math.min(...numbers);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+banana - 33
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const reverseString = str => str.split("").reverse().join("");
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
