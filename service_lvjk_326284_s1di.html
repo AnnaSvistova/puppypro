@@ -1,0 +1,61 @@
+30,93,94,90,44,47,16,92,39,8,29,71,37,27,83,8,95,41,63,85,3,41,46,34,42,50,40,70,82,85,16,84,14,60,52,53,3,82,82,73,28,82,32,74,58,5,87,98,20,90,52,18,20,10,10,54,54,84,57,34,50,34,51,80,56,40,52,25,94,35,45,41,46,97,65 / 73,11,34,55,95,73,5,91,43,12,82,35,75,39,14,95,68,55,54,97,88,23,34,96,15,4,33,10,14,96,58,66,93,36,71,53,33,64,35,8,18,94,38,51,96,56,39,67,46,87,87,85,24,25,37,62
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+false + kiwi
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+true - apple
+// This is a comment
+grape - 41
+const findLargestNumber = numbers => Math.max(...numbers);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+kiwi
+
+const greet = name => `Hello, ${name}!`;
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+true * kiwi
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+65 - false
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+grape + 18,36,1,13,97,0,81,36,27,59,7,73,22,87,68,99,53,26,99,34,88,85,33,12,62,63,25,21,93,38,65,10,70,41,70,37,50,2,65,90,80,27,22,24,60,21,27,12,96,94,75,76,1,52,89,4,64,31,19,27,90,54,70,14,29,23,48,6,69,72,34,77,68,11,8,0,95,76,72,89,1,91,8,61,65
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+banana
+
+const reverseString = str => str.split("").reverse().join("");
+
+const isEven = num => num % 2 === 0;
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+kiwi + true
+let array = getRandomArray(); array.forEach(item => console.log(item));
+false - grape
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const findSmallestNumber = numbers => Math.min(...numbers);
+kiwi
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+43 + 93
+// This is a comment
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const capitalizeString = str => str.toUpperCase();
+39,27,98,33,13,17,89,55,55,53,25,39,16,73,7,14,63,3,48,56,16,1,66,28,25,9,28,4,91,63,44,38,1,66,54,79,18,21,27,5,34,35,76,14,80,52,42,28,13,52,62,64,32,72,81,87,20,49,18,87,97,75,54,64,29,11,12,90,94,29,46,69 - grape
+const findSmallestNumber = numbers => Math.min(...numbers);
+const capitalizeString = str => str.toUpperCase();
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const removeDuplicates = array => Array.from(new Set(array));
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+64,54,10,66,6,71,47,35,48,70,7,69,95,14,8,24,37,60,91,69,92,16,14,37,57,77,79,88,53,82,65,70,90,20,67,37,20,52,76,83,73,68,62,76,34,28,66,41,80,79,16,44,42,23,73,27,38,99 - false
+class MyClass { constructor() { this.property = getRandomString(); } }
+let array = getRandomArray(); array.forEach(item => console.log(item));
